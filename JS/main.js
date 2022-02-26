@@ -37,7 +37,7 @@ copy.addEventListener('click', ()=>{
 
     setTimeout(function(){ 
         popMenu.classList.remove('popped');
-    }, 2000);
+    }, 3000);
 
 });
 
