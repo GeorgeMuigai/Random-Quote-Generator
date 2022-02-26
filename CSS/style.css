@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background: #5271e9;
+}
+.container{
+    background: #fff;
+    width: 605px;
+    position: relative;
+    padding: 30px 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.container .header{
+    text-align: center;
+    font-size: 2em;
+    margin: 15px 0;
+}
+
+.content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #b7c2c2;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+.quote-Section{
+    position: relative;
+    padding: 5px 30px;
+    margin-bottom: 30px;
+}
+.quote-Section .fa-quote-left, .quote-Section .fa-quote-right{
+    position: absolute;
+    font-size: 1.5em;
+}
+.fa-quote-left{
+    top: 0;
+    left: 0;
+}
+.fa-quote-right{
+    bottom: 0;
+    right: 0;
+}
+.quote-Section .quote{
+    text-align: center;
+    color: #454949;
+    font-size: 1.2em;
+}
+.author p{
+    position: absolute;
+    color: #454949;
+    bottom: 10%;
+    right: 0;
+}
+.author p::after{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    top: 45%;
+    left: -30%;
+    background: #646868;
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Features{
+    display: flex;
+}
+.Features li, .btn a{
+    color: #5271e9;
+    border: 2px solid #5271e9;
+}
+.Features li{
+    margin-right: 1rem;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.Features li:hover, .btn a:hover{
+    color: #fff;
+    background: #5271e9;
+}
+.btn a{
+    cursor: pointer;
+    text-decoration: none;
+    padding: 8px 12px;
+    background: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+a.loading{
+    opacity: 60%;
+    color: #fff;
+    background: #5271e9;
+    pointer-events: none;
+}
+
+.popup{
+    position: absolute;
+    bottom: -100%;
+    left: 2%;
+    background: #333;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    transition: .3s all linear;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: .3s all linear;
+    -moz-transition: .3s all linear;
+    -ms-transition: .3s all linear;
+    -o-transition: .3s all linear;
+}
+.popup p{
+    color: #fff;
+}
+.popped{
+    bottom: 5%;
+}
