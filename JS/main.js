@@ -18,13 +18,12 @@ btnGen.addEventListener('click', ()=>{
         authorText.innerHTML = result.author;
         btnGen.classList.remove('loading');
         btnGen.innerText = "New Quote";
-        console.log(result);
     })
 });
 
 
 sound.addEventListener('click', ()=>{
-    let speech = new SpeechSynthesisUtterance(quoteText.innerText);
+    let speech = new SpeechSynthesisUtterance(quoteText.innerText + ", quote by" + authorText.innerText);
     speechSynthesis.speak(speech);
 });
 
